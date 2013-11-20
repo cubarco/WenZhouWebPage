@@ -10,13 +10,13 @@
 <title>主页：温州</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar-whatever" id="bodystart">
 
 
 
 
 <!--导航栏-->
-<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation" id="navbar-whatever">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#cube-lin-nav-id">
@@ -25,13 +25,13 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="#">Cube Lin</a>
+    <a class="navbar-brand" href="index.html#bodystart">Cube Lin</a>
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse" id="cube-lin-nav-id">
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Index</a></li>
+      <li class="active"><a href="#bodystart">Index</a></li>
       <li><a href="#picture">Picture</a></li>
       <li><a href="#detail">Detail</a></li>
     </ul>
@@ -67,9 +67,9 @@
           <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" src="image/wenzhou1_big_2.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Example headline.</h1>
-              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+              <h1>Wenzhou</h1>
+              <p>Wenzhou, which translates to "a mild and pleasant land", derives its name from its climate, as it is neither extremely hot in summer nor extremely cold in the winter.</p>
+              <p><a class="btn btn-lg btn-primary" href="#picture" role="button">View pictures</a></p>
             </div>
           </div>
         </div>
@@ -79,17 +79,18 @@
             <div class="carousel-caption">
               <h1>Another example headline.</h1>
               <p>Wenzhou, which translates to "a mild and pleasant land", derives its name from its climate, as it is neither extremely hot in summer nor extremely cold in the winter.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+              <p><a class="btn btn-lg btn-primary" href="#detail" role="button">See details</a></p>
             </div>
           </div>
         </div>
         <div class="item">
-          <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" src="image/wenzhou4_big.jpg" alt="Third slide">
+<!--         data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" src="image/wenzhou4_big_2.jpg" -->
+          <img  alt="Third slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+              <h1>Ooops..</h1>
+              <p>However,there is a saying goes <i>"All good things come to an end."</i> </p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">View the fucking <i>FLASH</i></a></p>
             </div>
           </div>
         </div>
@@ -127,7 +128,7 @@
 
 <!--图片展览标题  这里有个more-->
 <div class="page-header" >
-  <h1>Pictures <small>Daytime&Night Wenzhou</small> </h1>
+  <h1>Pictures <small>&Introduction</small> </h1>
   <ul class="pager">
   <li class="next"><a href="#">More &raquo;</a></li>
   </ul>
@@ -141,9 +142,9 @@
       <br/>
       <img data-src="holder.js/300x200" src="image/wenzhou1.jpg" alt="...">
       <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>ashjashjkdashkjdhkjahsjkdhak asdjhaskjh  asdjkhasjkhkjahk ahkjh khaskjhdask </p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+        <h3>Geography</h3>
+        <p>With jurisdiction over three districts, two county-level cities and six counties, Wenzhou covers a land area of 11,784&#160;km...</p>
+        <p><a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#myModal1" >More &raquo;</a></p>
       </div>
     </div>
   </div>
@@ -153,9 +154,9 @@
       <br/>
       <img data-src="holder.js/300x200" src="image/wenzhou2.jpg" alt="image/wenzhou1.jpg">
       <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>ashjashjkdashkjdhkjahsjkdhak asdjhaskjh  asdjkhasjkhkjahk ahkjh khaskjhdask </p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+        <h3>Climate</h3>
+        <p>Wenzhou derives its present name from its mild climate, and has a humid subtropical climate (Köppen: <i>Cfa</i>) with short, mild...</p>
+        <p><a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#myModal2"  >More &raquo;</a></p>
       </div>
     </div>
   </div>
@@ -165,18 +166,89 @@
       <br/>
       <img data-src="holder.js/300x200" src="image/wenzhou3.jpg" alt="">
       <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>ashjashjkdashkjdhkjahsjkdhak asdjhaskjh  asdjkhasjkhkjahk ahkjh khaskjhdask </p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+        <h3>Economy</h3>
+        <p>Wenzhou exports food, tea, wine, jute, timber, paper, Alunite (a non-metallic mineral used to make alum and fertilizer).... </p>
+        <p><a href="#" class="btn btn-primary" role="button"  data-toggle="modal" data-target="#myModal3" >More &raquo;</a></p>
       </div>
     </div>
   </div>
 </div>
+
+<!-- Modal1 -->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Geography</h4>
+      </div>
+      <div class="modal-body">
+        <p>&#160;&#160;&#160;&#160;With jurisdiction over three districts, two county-level cities and six counties, Wenzhou covers a land area of 11,784&#160;km<sup>2</sup> (4,550&#160;sq&#160;mi) and sea area of 11,000&#160;km<sup>2</sup> (4,200&#160;sq&#160;mi). The population of the prefectural level city is 9.12 million including 2.30 million urban residents, divided among 2 county-level cities and 3 districts.</p>
+	<p>&#160;&#160;&#160;&#160;Much of Wenzhou is mountainous, with many mountain tops reaching altitudes in excess of 1,000&#160;m (3,300&#160;ft), for example in the Yandang Mountains, a coastal mountain range dominating the eastern part of prefecture. Another dominating landscape element is the Ou River, the largest river in Wenzhou prefecture. There are some coastal plains, notably around the mouth of the Ou (where the city proper of Wenzhou is located), and further south, around the mouth of the Feiyun River (in Rui'an, a county-level city). Other notable rivers include the Nanxi River, a tributary of the Ou. Coastal plains are used intensively for agriculture but also host much of the population and industry.</p>
+	<p>&#160;&#160;&#160;&#160;The 339 kilometres (211&#160;mi) long coastline gives the city abundant marine resources and many beautiful islands. Dongtou, one of the counties in Wenzhou, is also called the "County of one hundred islands".</p>
+	<p>&#160;&#160;&#160;&#160;Wenzhou boasts wonderful landscapes with rugged mountains and tranquil waters, including three state-level scenic spots, namely the Yandang Mountains, the Nanxi River and the Baizhangji Fall-Feiyun Lake, and two national nature reserves, namely the Wuyanling Ridge and the Nanji Islands, among which Yandang Mountain has been named as World Geopark, while Nanji Islands are listed as UNESCO’s Marine Nature Reserve of World Biosphere Reserves. Scenic area accounts for 25% of the city’s land space.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal1 -->
+
+<!-- Modal2 -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Climate</h4>
+      </div>
+      <div class="modal-body">
+	<p>&#160;&#160;&#160;&#160;Wenzhou derives its present name from its mild climate, and has a humid subtropical climate (Köppen: <i>Cfa</i>) with short, mild, dry winters and long, hot, humid summers. Summers are similar to the remainder of the province (albeit slightly cooler during the daytime as compared to inland areas), but winter is much milder, partly due to the southerly location and partly due to the sheltering effect of the surrounding mountains. The monthly 24-hour average temperature ranges from <span style="white-space:nowrap;">8.0 °C</span> <span style="white-space:nowrap;">(46.4&#160;°F)</span> in January to <span style="white-space:nowrap;">28.0 °C</span> <span style="white-space:nowrap;">(82.4&#160;°F)</span> in July and August, while the annual mean is <span style="white-space:nowrap;">18.08 °C</span> <span style="white-space:nowrap;">(64.5&#160;°F)</span>. Heavy rainfalls occur in late spring and early summer due to the plum rains of the East Asian monsoon, while typhoons are commonly a threat in the second half of summer causing considerable damage and destruction. With 1,706 hours of bright sunshine annually, sunlight is not generous.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal2 -->
+
+
+<!-- Modal3 -->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Economy</h4>
+      </div>
+      <div class="modal-body">
+	<p>&#160;&#160;&#160;&#160;Wenzhou exports food, tea, wine, jute, timber, paper, Alunite (a non-metallic mineral used to make alum and fertilizer). Alunite is quite abundant here and sometimes Wenzhou claims to be the "Alunite Capital of the World". Its 10 main industries each exceeding 1.5 billion dollars are electrical machinery, leather products, general equipment, power supply, plastic manufacturing, textile and garment, transport equipment, chemical products, metal products and metal processing.</p>
+	<p>&#160;&#160;&#160;&#160;From the 1990s, low-voltage electric appliances manufacturing became one of the major industries in Wenzhou, with some of the large private enterprises setting up joint ventures with GE and Schneider.</p>
+	<p>&#160;&#160;&#160;&#160;In 1994, exploration for oil and natural gas commenced in the East China Sea 100&#160;km (62&#160;mi) off the coast of Wenzhou. Companies such as Texaco, Chevron, Shell and JAPEX have started to drill for oil but the operations have been largely unsuccessful.</p>
+	<p>&#160;&#160;&#160;&#160;Wenzhou is a city full of vibrant business activities. When China began economic reforms in 1978, Wenzhou was the first city in China to set up individual and private enterprises as well as shareholder cooperatives. It has also taken the lead in carrying out financial system reform and structural reform in townships. Being a pioneer in utilising marketing mechanism to develop urban constructions, Wenzhou has won a number of firsts in China and set many national records.</p>
+	<p>&#160;&#160;&#160;&#160;From 1978 through 2009, the GDP of the city has increased from 1.32 billion RMB to 252.8 billion RMB with the gross fiscal revenue increasing from 0.135 billion RMB to 36.1 billion RMB, and the net per capita income for rural residents increasing from 113.5 RMB to 10,100 RMB. The per capita disposable income for urban residents increased from 422.6 RMB in 1981 to 28,021 RMB in 2009, which is the third highest among Chinese cities, after Dongguan and Shenzhen.</p>
+	<p>&#160;&#160;&#160;&#160;GDP of the city in 2011 reached 335.087 billion RMB, a YOY growth of 9.5%. Per capita GDP reached 42,278 RMB, or USD 6,546 as per yearly average exchange rate, a 8.2% increase over the previous year.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal3 -->
+
+
+
+
+
+
+
 <!--三张图-->
 
 </div>
 
 <hr id="detail">
+
 <!--这个是detail-->
 <div class="container">
       <!-- START THE FEATURETTES -->
@@ -191,11 +263,13 @@
 		 <!--detail Title-->
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
+          <h2 class="featurette-heading">Transport <span class="text-muted">Example:Railway</span></h2>
+          <p class="lead">Because of Wenzhou's geographic location, it is difficult to build a railway to connect it with other cities. Wenzhou's first railway, ...</p>
+	  <p><a href="#" class="btn btn-primary" role="button"  data-toggle="modal" data-target="#moreDetail1" >More &raquo;</a></p>
+      </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" src="image/wenzhou1.jpg" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" src="image/Wenzhou_train_station.JPG" alt="Generic placeholder image" id="wenzhou_train_station">
+
         </div>
       </div>
 
@@ -203,11 +277,12 @@
 
       <div class="row featurette">
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" src="image/wenzhou2.jpg" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" src="image/Wuyanling_foot_of_covered_bridges.jpg" alt="Generic placeholder image">
         </div>
         <div class="col-md-7">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading">Tourism <span class="text-muted">Guess what's the name of this place</span></h2>
+          <p class="lead">Nanxi River located in Yongjia County, Nanxi River was famous for its 36 bends and 72 beaches. The main scenic spots of the Nanxi River...</p>
+	   <p><a href="#" class="btn btn-primary" role="button"  data-toggle="modal" data-target="#moreDetail2"  >More &raquo;</a></p>
         </div>
       </div>
 
@@ -226,6 +301,48 @@
       <hr class="featurette-divider">
       <!-- /END THE FEATURETTES -->
 
+<!-- Modal1 -->
+<div class="modal fade" id="moreDetail1" tabindex="-1" role="dialog" aria-labelledby="de" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Transport</h4>
+      </div>
+      <div class="modal-body">
+<!--TODO !!!-->
+        <p>&#160;&#160;&#160;&#160;With jurisdiction over three districts, two county-level cities and six counties, Wenzhou covers a land area of 11,784&#160;km<sup>2</sup> (4,550&#160;sq&#160;mi) and sea area of 11,000&#160;km<sup>2</sup> (4,200&#160;sq&#160;mi). The population of the prefectural level city is 9.12 million including 2.30 million urban residents, divided among 2 county-level cities and 3 districts.</p>
+	<p>&#160;&#160;&#160;&#160;Much of Wenzhou is mountainous, with many mountain tops reaching altitudes in excess of 1,000&#160;m (3,300&#160;ft), for example in the Yandang Mountains, a coastal mountain range dominating the eastern part of prefecture. Another dominating landscape element is the Ou River, the largest river in Wenzhou prefecture. There are some coastal plains, notably around the mouth of the Ou (where the city proper of Wenzhou is located), and further south, around the mouth of the Feiyun River (in Rui'an, a county-level city). Other notable rivers include the Nanxi River, a tributary of the Ou. Coastal plains are used intensively for agriculture but also host much of the population and industry.</p>
+	<p>&#160;&#160;&#160;&#160;The 339 kilometres (211&#160;mi) long coastline gives the city abundant marine resources and many beautiful islands. Dongtou, one of the counties in Wenzhou, is also called the "County of one hundred islands".</p>
+	<p>&#160;&#160;&#160;&#160;Wenzhou boasts wonderful landscapes with rugged mountains and tranquil waters, including three state-level scenic spots, namely the Yandang Mountains, the Nanxi River and the Baizhangji Fall-Feiyun Lake, and two national nature reserves, namely the Wuyanling Ridge and the Nanji Islands, among which Yandang Mountain has been named as World Geopark, while Nanji Islands are listed as UNESCO’s Marine Nature Reserve of World Biosphere Reserves. Scenic area accounts for 25% of the city’s land space.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal1 -->
+
+<!-- Modal2 -->
+<div class="modal fade" id="moreDetail2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Tourism</h4>
+      </div>
+      <div class="modal-body">
+	<p>&#160;&#160;&#160;&#160;Nanxi River located in Yongjia County,Nanxi River was famous for its 36 bends and 72 beaches. The main scenic spots of the Nanxi River area include the Furong Triangle Rock, the Waterfall of Tengxi Pool, the Twelve Peaks, the Taogong Cave, the Warehouse Under The Cliff, the Furong Ancient Hamlet and the Lion Rock. It was named as the one of National Tourist Scenic Spot by the State Council and has been list in Tentative Lists of UNESCO World Heritage.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal2 -->
+      
+      
+      
 
 
 
@@ -235,7 +352,7 @@
           <address>
             <strong>Cube lin</strong><br>
             Qinyuan,Hust<br>
-            <abbr title="Phone number">P:</abbr> ***********
+            <abbr title="Phone number">P:</abbr> 1234567890 :P
           </address>
           
           <address>
